@@ -1,0 +1,27 @@
+{
+  "name": "risk",
+  "version": "1.0.0",
+  "description": "Senior Design Final Project. Risk Analysis Application for Erie Insurance",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "client-install": "npm install --prefix client",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Jeff Edmondson, Tony Calarie, Brad Rutkowski, Emily Sauer",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.0",
+    "nodemon": "^1.18.9"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}
